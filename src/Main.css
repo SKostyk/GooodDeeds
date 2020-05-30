@@ -1,0 +1,23 @@
+@font-face{
+    font-family: cursive;
+   
+}
+#root {
+  font-family: cursive;
+}
+.main_wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.header li {
+    cursor: pointer;
+    width: 50px;
+}
+.btn h1 {
+    line-height: 34px;
+    text-align: center;
+}
