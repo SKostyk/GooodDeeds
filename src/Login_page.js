@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 
 class SignIn extends React.Component {
   state = {
-    Email: '',
+    email: '',
     password: '',
     errors: {
-      username: '',
+      email: '',
       password: ''
     }
   };
@@ -18,7 +18,7 @@ class SignIn extends React.Component {
   
 
   
-  this.setState({errors, [name]: value});
+  this.setState({errors, email: value});
   };
 
   render() {
@@ -27,13 +27,13 @@ class SignIn extends React.Component {
       <form onSubmit={(e) => this.props.handle_login(e, this.state)}>
         <div className="inpSec">
           <div className="labelInp">
-            <label htmlFor="Email">Email</label>
+            <label htmlFor="email">Email</label>
             <input
               placeholder="Enter Email"
-            type="Email"
+            type="email"
             required="required"
             autoComplete="off"
-            name="Email"
+            name="email"
             value={this.state.Email}
             onChange={this.handle_change}
             />

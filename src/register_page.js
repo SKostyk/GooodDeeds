@@ -5,12 +5,12 @@ import PropTypes from 'prop-types';
 
 class Signup extends React.Component {
   state = {
-    Email: '',
+    email: '',
     first_name: '',
     last_name: '',
     password: '',
     errors: {
-      Email: '',
+      email: '',
       first_name: '',
       last_name: '',
       password: ''
@@ -29,14 +29,14 @@ this.setState({errors, [name]: value});
     const {errors} = this.state;
     return (
       <form onSubmit={(e) => this.props.handle_signup(e, this.state)}>
-        <label htmlFor="Email">Email</label>
+        <label htmlFor="email">Email</label>
         <div className="inpSec">
           <input
             placeholder="Enter Email"
-            type="Email"
+            type="email"
             required="required"
             autoComplete="off"
-            name="Email"
+            name="email"
             value={this.state.Email}
             onChange={this.handle_change}
           />

@@ -18,7 +18,7 @@ class App extends Component {
     this.state = {
       displayed_page: '',
       logged_in:  false,
-      username: '',
+      email: '',
       first_name: '',
       current_page: '/app',
     };
